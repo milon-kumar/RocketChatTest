@@ -11,6 +11,7 @@ import CreateChannelsCard from './cards/CreateChannelsCard';
 import CustomContentCard from './cards/CustomContentCard';
 import DesktopAppsCard from './cards/DesktopAppsCard';
 import DocumentationCard from './cards/DocumentationCard';
+import TestCard from './cards/TestCard';
 import JoinRoomsCard from './cards/JoinRoomsCard';
 import MobileAppsCard from './cards/MobileAppsCard';
 
@@ -43,6 +44,7 @@ const DefaultHomePage = (): ReactElement => {
 						<MobileAppsCard />
 						<DesktopAppsCard />
 						<DocumentationCard />
+						<TestCard />
 						{(isAdmin || (isCustomContentVisible && !isCustomContentBodyEmpty)) && <CustomContentCard />}
 					</CardGroup>
 				</Box>
